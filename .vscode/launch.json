@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+        {
+            "name": "Launch API (Project)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/API/bin/Debug/net9.0/API.dll",
+            "cwd": "${workspaceFolder}/API",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_ROOT": "/home/jaysonmalicse/dotnet",
+                "PATH": "/home/jaysonmalicse/dotnet:${env:PATH}",
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
+    ]
+}
